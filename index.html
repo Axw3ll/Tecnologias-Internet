@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="Script.js"></script>
+    <title>PROTOCOLO HTTP</title>
+</head>
+<body>
+    <nav>
+        <div class="containerNav">
+            <div class="menu">
+                <div class="logo">
+                    <img src="https://www.grupodigital.eu/wp-content/uploads/2017/02/letra-A.png" alt="logo" id="logo">
+                </div>
+                <div class="menuOp">
+                    <p><a href="#TCP/UDP">Tcp/Udp</a></p>
+                    <p><a href="#estructura">Estructura</a></p>
+                    <p><a href="#CodigosRespuesta">Codigos de Respuesta</a></p>
+                    <p><a href="./index.html">Inicio</a></p>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="containerCard">
+        <div class="imgInfo">
+            <img src="https://cdn-icons-png.flaticon.com/256/5551/5551267.png" alt="logo" id="imgEscudo">
+        </div>
+        <div class="texto">
+            <p>HTTP, de sus siglas en inglés: "Hypertext Transfer Protocol", es el nombre de un protocolo el cual nos permite realizar una petición de datos y recursos, como pueden ser documentos HTML. Es la base de cualquier intercambio de datos en la Web, y un protocolo de estructura cliente-servidor, esto quiere decir que una petición de datos es iniciada por el elemento que recibirá los datos (el cliente), normalmente un navegador Web. Así, una página web completa resulta de la unión de distintos sub-documentos recibidos, como, por ejemplo: un documento que especifique el estilo de maquetación de la página web (CSS), el texto, las imágenes, vídeos, scripts, etc...</p>
+        </div>
+    </div>
+    <div class="containerCard">
+        <div class="imgInfo">
+            <img src="https://cdn-icons-png.flaticon.com/512/288/288873.png" alt="logo" id="imgEscudo">
+        </div>
+        <div class="texto" id="estructura">
+            <p>HTTP utiliza una estructura de solicitud-respuesta. Una solicitud HTTP se envía desde un cliente (por ejemplo, un navegador web) a un servidor, y el servidor responde con los recursos solicitados o un mensaje de error si la solicitud no se puede satisfacer. Aquí están los componentes clave de una solicitud y una respuesta HTTP </p>
+        </div>
+    </div>
+    <section id="TCP/UDP">
+        <h2 style="text-align: center; color: black; text-transform: uppercase;">¿Qué es TCP/UDP?</h2>
+        <div class="containerCard">
+            <div class="imgInfo">
+                <img src="img/ip.png" alt="logo" id="imgEscudo">
+            </div>
+            <div class="texto">
+                <p>El protocolo de control de transmisión (TCP) y el protocolo de datagramas de usuario (UDP) son dos protocolos diferentes que se ejecutan sobre el protocolo de Internet (IP) y se utilizan para la transmisión de datos. Ambos TCP y UDP se utilizan ampliamente en la transmisión de datos a través de Internet. Sin embargo, cada uno tiene sus propias ventajas y desventajas. TCP es un protocolo orientado a la conexión, mientras que UDP es un protocolo sin conexión. TCP es confiable mientras que UDP no es confiable. TCP es lento en comparación con UDP.</p>
+            </div>
+        </div>
+        <div class="containerCard">
+            <div class="imgInfo">
+                <p style=" font-weight:bold; font-size: 52px; padding: 60px; color: black;">
+                    Protocolos de <span style="color: red;">red</span> y sus <span style="color: red;">puertos</span>
+                  </p>
+                  
+            </div>
+            <div class="texto">
+               <ol>
+                    <li>HTTP (Hypertext Transfer Protocol) - Puerto 80 (por defecto).
+                    </li>
+                    <li>HTTPS (Hypertext Transfer Protocol Secure) - Puerto 443 (por defecto).
+                    </li>
+                    <li>SMTP (Simple Mail Transfer Protocol) - Puerto 25 (por defecto).
+                    </li>
+                    <li>POP3 (Post Office Protocol 3) - Puerto 110 (por defecto).</li>
+                    <li>IMAP (Internet Message Access Protocol) - Puerto 143 (por defecto).
+                    </li>
+                    <li>MIME (Multipurpose Internet Mail Extensions) - MIME no utiliza un puerto específico, es una extensión para el formato de correo electrónico.
+                    </li>
+                    <li>FTP (File Transfer Protocol) - Puerto 21 (por defecto).
+                    </li>
+                    <li>FTPS (File Transfer Protocol Secure) - Puerto 990 (por defecto).
+                    </li>
+                    <li>SFTP (SSH File Transfer Protocol) - Puerto 22 (por defecto).
+                    </li>
+                    <li>BitTorrent - Utiliza una gama de puertos, generalmente entre 6881 y 6889.
+                    </li>
+                    <li>eDonkey - Puerto 4662 (por defecto).
+                    </li>
+                    <li>FastTrack (utilizado por Kazaa) - Puerto 1214 (por defecto).
+                    </li>
+                    <li>IRC (Internet Relay Chat) - Puerto 6667 (por defecto).
+                    </li>
+                    <li>XMPP (Extensible Messaging and Presence Protocol) - Puerto 5222 (por defecto para conexiones no seguras) y 5223 (para conexiones seguras).
+                    </li>
+                    <li>MTProto (Protocolo de Telegram) - Utiliza una gama de puertos, generalmente entre 443 y 449.
+                    </li>
+               </ol>
+            </div>
+        </div>
+        
+    </section>
+    
+    <section id="CodigosRespuesta">
+        <h2 style="text-align: center; color:black; font-size: 28px;text-transform: uppercase;">Codigos de respuesta</h2> 
+    <div class="Flatlist-container">
+        <div class="flatlist">
+            <div class="card">
+                <div class="tituloCard">
+                    <h3>Códigos de Respuesta Informativos (1xx)</h3>
+                </div>
+                <ul>
+                    <li><a href="./Paginas/codigosDeError.html" id="noSubrayado">100 Continue</a></li>
+                    <li><a href="./Paginas/codigosDeError.html">101 Switch Protocols</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="tituloCard">
+                    <h3>Códigos de Respuesta Exitosa (2xx)</h3>
+                </div>
+                <ul>
+                    <li><a href="./Paginas/codigosRespuestaExitosa.html">200 OK</a></li>
+                    <li><a href="./Paginas/codigosRespuestaExitosa.html">201 Created</a></li>
+                    <li><a href="./Paginas/codigosRespuestaExitosa.html">204 No Content</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="tituloCard">
+                  <h3>Códigos de Respuesta de Redirección (3xx)</h3>
+                </div>
+                <ul>
+                    <li><a href="./Paginas/codigosDeRedireccion.html">301 Moved Permanently</a></li>
+                    <li><a href="./Paginas/codigosDeRedireccion.html">302 Found (o 303 See Other)</a></li>
+                    <li><a href="./Paginas/codigosDeRedireccion.html">304 Not Modified</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="tituloCard">
+                    <h3>Códigos de Respuesta de Error del Cliente (4xx)</h3>
+                </div>
+                <ul>
+                    <li><a href="./Paginas/codigosDeErrorCliente.html">400 Bad Request</a></li>
+                    <li><a href="./Paginas/codigosDeErrorCliente.html">401 Unauthorized</a></li>
+                    <li><a href="./Paginas/codigosDeErrorCliente.html">403 Forbidden</a></li>
+                    <li><a href="./Paginas/codigosDeErrorCliente.html">404 Not Found</a></li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="tituloCard">
+                  <h3>Codigo de Respuesta Error del Servidor(5xx)</h3>
+                </div>
+                <ul>
+                    <li><a href="./Paginas/codigoErrorDeRespuestaServidor.html">500 Internal Server Error</a></li>
+                    <li><a href="./Paginas/codigoErrorDeRespuestaServidor.html">502 Bad Getaway</a></li>
+                    <li><a href="./Paginas/codigoErrorDeRespuestaServidor.html">503 Service Unavailable</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer>
+        <div style="background-color: black; height: 150px; text-align: center; font-weight: bold; padding: 10px;">
+            <p>Axel Omar Arredondo Viera</p>
+            <p>2023</p>
+            <p>Tecnologias del Internet</p>
+            <p>1C</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
